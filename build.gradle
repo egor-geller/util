@@ -28,7 +28,9 @@ dependencies {
 
 tasks.named('jar') {
     manifest {
-        attributes('Implementation-Title': project.name,
+        attributes(
+                'Package':'com.geller.util',
+                'Implementation-Title': project.name,
                 'Implementation-Version': project.version)
     }
 }
